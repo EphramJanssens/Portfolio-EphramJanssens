@@ -1,37 +1,47 @@
 .WorkDetailBanner {
-    width: 100%;
-    height: 50vh; 
-    overflow: hidden;
+	width: 100%;
+	height: 50vh;
+	overflow: hidden;
 }
 
 .WorkDetailBanner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
 }
 
 .WorkDetailContent {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 60px 5%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 60px 5%;
 }
 
 .WorkDetailContent h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+	font-size: 2.5rem;
+	margin-bottom: 15px;
 }
 
 .WorkMeta {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+	display: flex;
+	gap: 30px;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
 }
 
 .WorkDescription p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-    font-size: 1.1rem;
+	margin-bottom: 20px;
+	line-height: 1.6;
+	font-size: 1.1rem;
+}
+
+#detail-video {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.hidden {
+	display: none !important;
 }

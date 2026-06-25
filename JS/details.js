@@ -4,8 +4,19 @@ const currentWorkId = urlParams.get("id");
 const currentWork = worksData.find((work) => work.id === currentWorkId);
 
 if (currentWork) {
-	document.getElementById("detail-image").src = currentWork.image;
-	document.getElementById("detail-image").alt = currentWork.title;
+	const imageElement = document.getElementById("detail-image");
+	const videoElement = document.getElementById("detail-video");
+
+	if (currentWork.videoUrl) {
+		videoElement.src = currentWork.videoUrl;
+		videoElement.classList.remove("hidden");
+		imageElement.classList.add("hidden");
+	} else {
+		imageElement.src = currentWork.image;
+		imageElement.alt = currentWork.title;
+		imageElement.classList.remove("hidden");
+		videoElement.classList.add("hidden");
+	}
 
 	document.getElementById("detail-title").textContent = currentWork.title;
 	document.getElementById("detail-role").textContent = currentWork.role;
