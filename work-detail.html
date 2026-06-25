@@ -24,22 +24,23 @@
 
 		<main>
 			<section class="WorkDetailBanner">
-				<img src="#" alt="Grote overzichtsfoto van Work 1" />
+				<img id="detail-image" src="#" alt="Banner image" />
 			</section>
 
 			<section class="WorkDetailContent">
-				<h1>Titel van het Project</h1>
+				<h1 id="detail-title">Loading...</h1>
 
 				<div class="WorkMeta">
-					<p><strong>Rol:</strong> Developer</p>
-					<p><strong>Tools:</strong> HTML, CSS</p>
+					<p><strong>Rol:</strong> <span id="detail-role"></span></p>
+					<p><strong>Tools:</strong> <span id="detail-tools"></span></p>
 				</div>
 
 				<div class="WorkDescription">
-					<p>Hier komt de uitgebreide uitleg.</p>
-					<p>Hier komt de uitgebreide uitleg.</p>
+					<p id="detail-description"></p>
 				</div>
 			</section>
 		</main>
+		<script src="JS/data.js"></script>
+		<script src="JS/details.js"></script>
 	</body>
 </html>
