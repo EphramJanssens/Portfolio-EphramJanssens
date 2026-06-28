@@ -1,6 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
 const currentWorkId = urlParams.get("id");
-
 const currentWork = worksData.find((work) => work.id === currentWorkId);
 
 if (currentWork) {
@@ -25,8 +24,48 @@ if (currentWork) {
 		currentWork.description;
 
 	document.title = currentWork.title + " - Ephram Janssens";
+
+	const carouselContainer = document.getElementById(
+		"detail-carousel-container",
+	);
+	const carouselTrack = document.getElementById("carousel-track");
+	const prevBtn = document.getElementById("carousel-prev");
+	const nextBtn = document.getElementById("carousel-next");
+
+	if (currentWork.gallery && currentWork.gallery.length > 0) {
+		carouselContainer.classList.remove("hidden");
+
+		currentWork.gallery.forEach((imgUrl) => {
+			const slideDiv = document.createElement("div");
+			slideDiv.classList.add("carousel-slide");
+
+			const imgElement = document.createElement("img");
+			imgElement.src = imgUrl;
+			imgElement.alt = "Gallery image";
+
+			slideDiv.appendChild(imgElement);
+			carouselTrack.appendChild(slideDiv);
+		});
+
+		let currentIndex = 0;
+		const totalSlides = currentWork.gallery.length;
+
+		function updateCarousel() {
+			carouselTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+		}
+
+		nextBtn.addEventListener("click", () => {
+			currentIndex = currentIndex === totalSlides - 1 ? 0 : currentIndex + 1;
+			updateCarousel();
+		});
+
+		prevBtn.addEventListener("click", () => {
+			currentIndex = currentIndex === 0 ? totalSlides - 1 : currentIndex - 1;
+			updateCarousel();
+		});
+	}
 } else {
 	document.getElementById("detail-title").textContent = "Project niet gevonden";
 	document.getElementById("detail-description").textContent =
-		"Oeps! We konden dit werk niet vinden.";
+		"We konden dit werk niet vinden.";
 }

@@ -25,7 +25,13 @@
 		<main>
 			<section class="WorkDetailBanner">
 				<img id="detail-image" src="#" alt="Banner image" />
-                <iframe id="detail-video" class="hidden" src="" title="Youtube video player" frameborder="0"></iframe>
+				<iframe
+					id="detail-video"
+					class="hidden"
+					src=""
+					title="Youtube video player"
+					frameborder="0"
+				></iframe>
 			</section>
 
 			<section class="WorkDetailContent">
@@ -38,6 +44,20 @@
 
 				<div class="WorkDescription">
 					<p id="detail-description"></p>
+				</div>
+
+				<div id="detail-carousel-container" class="carousel-container hidden">
+					<button id="carousel-prev" class="carousel-btn prev-btn">
+						&#10094;
+					</button>
+
+					<div class="carousel-track-wrapper">
+						<div id="carousel-track" class="carousel-track"></div>
+					</div>
+
+					<button id="carousel-next" class="carousel-btn next-btn">
+						&#10095;
+					</button>
 				</div>
 			</section>
 		</main>
