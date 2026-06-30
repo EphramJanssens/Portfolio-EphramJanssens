@@ -1,29 +1,36 @@
 .WorkContainer {
-    background-color: #ffffff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+	background-color: #ffffff;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.WorkContainer a {
+	text-decoration: none;
 }
 
 .WorkContainer:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .InfoImage img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    display: block;
+	width: 100%;
+	height: 250px;
+	object-fit: contain;
+	display: block;
 }
 
 .InfoPanel {
-    padding: 20px;
+	padding: 20px;
 }
 
 .InfoPanel h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+	font-size: 1.5rem;
+	margin-bottom: 10px;
 }
