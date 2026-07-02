@@ -15,7 +15,7 @@ const worksData = [
 			"../Images/LearninChem/module1.png",
 			"../Images/LearninChem/Module2.png",
 			"../Images/LearninChem/Buret.png",
-			"../Images/LearninChem/Module3.png"
+			"../Images/LearninChem/Module3.png",
 		],
 	},
 	{
@@ -53,6 +53,44 @@ const worksData = [
 			"../Images/StatuePose/Screenshot 2025-09-23 132601.png",
 			"../Images/StatuePose/Screenshot 2025-09-23 132646.png",
 			"../Images/StatuePose/Screenshot 2025-09-23 132742.png",
+		],
+	},
+	{
+		id: "werk4",
+		title: "Ecosysteem",
+		role: "UI/UX Designer",
+		tools: "Figma, Illustrator, Photoshop",
+		description: "Dit is de uitgebreide uitleg van het project.",
+		image: "../Images/Ecosysteem/Kiosk - Start - Finished.png",
+		videoUrl: "",
+		gallery: [
+			"../Images/Ecosysteem/Kiosk - Start - Finished.png",
+			"../Images/Ecosysteem/Kiosk - Create - Finished.png",
+			"../Images/Ecosysteem/Kiosk - Result - Finished.png",
+			"../Images/Ecosysteem/Base - Mobile - Finished.png",
+			"../Images/Ecosysteem/Map- Mobile - Finished.png",
+			"../Images/Ecosysteem/KioskCreate_wf.png",
+			"../Images/Ecosysteem/Mormel.png",
+			"../Images/Ecosysteem/KioskResult_wf.png",
+			"../Images/Ecosysteem/KioskStart_wf.png",
+		],
+	},
+	{
+		id: "werk5",
+		title: "Dark patterns",
+		role: "3D game developer",
+		tools:
+			"Unity 6, C#, Vue, Vite, Bootstrap 5, Node.js, Express, PostgreSQL, Docker",
+		githubUrl: "https://github.com/EHB-MCT/wdm-EphramJanssens.git",
+		description:
+			"Real-time analytics platform for Unity games with behavioral tracking and user profiling. This project offers a full-stack solution for collecting, storing, and visualizing gameplay data. The system connects a Unity game with a Node.js backend and a Vue 3 frontend dashboard to provide insight into player behavior through detailed logs and statistics.",
+		image: "../Images/Dark patterns/1.png",
+		videoUrl: "",
+		gallery: [
+			"../Images/Dark patterns/1.png",
+			"../Images/Dark patterns/2.png",
+			"../Images/Dark patterns/3.png",
+			"../Images/Dark patterns/4.png",
 		],
 	},
 ];

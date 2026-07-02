@@ -23,6 +23,16 @@ if (currentWork) {
 	document.getElementById("detail-description").textContent =
 		currentWork.description;
 
+	const githubContainer = document.getElementById("detail-github-container");
+	const githubLink = document.getElementById("detail-github-link");
+
+	if (currentWork.githubUrl) {
+		githubLink.href = currentWork.githubUrl;
+		githubContainer.classList.remove("hidden");
+	} else {
+		githubContainer.classList.add("hidden");
+	}
+
 	document.title = currentWork.title + " - Ephram Janssens";
 
 	const carouselContainer = document.getElementById(
