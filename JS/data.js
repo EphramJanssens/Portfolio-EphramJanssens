@@ -4,6 +4,7 @@ const worksData = [
 		title: "LearninChem",
 		role: "VR Developer",
 		tools: "Unity 6, C#, Meta quest 3",
+		githubUrl: "https://github.com/EphramJanssens/LearninChem.git",
 		description:
 			"LearninChem is een interactieve virtual reality-applicatie die de training in de chemische sector veiliger en efficiënter maakt. Ontwikkeld als een standalone-ervaring voor de Meta Quest-headset. Het systeem is ontworpen als een virtuele faalruimte. Hierin kunnen trainees, zoals jobstudenten en startende laboranten, routinematige labotaken inoefenen. De simulatie is gebouwd in Unity 6 met een functionele low-poly-stijl en begeleidt gebruikers stap voor stap in drie kernmodules. Deze zijn: correct aan doen van persoonlijke beschermingsmiddelen (PBM's), het uitvoeren van een zuur/base-titratie en een geleidbaarheidsmeting. Door deze procedures virtueel te herhalen, bouwen nieuwkomers sneller zelfvertrouwen op. En dan ook zonder enig risico op ongevallen of de verspilling van dure chemicaliën. Dit leertraject verlaagt niet alleen de instapdruk voor nieuw talent, maar verlicht ook de last die ervaren mentoren hebben op de werkvloer.",
 		image: "#",
@@ -23,7 +24,8 @@ const worksData = [
 		title: "Belcatering web app",
 		role: "Web developer, photographer, contact person",
 		tools: "HTML, CSS, JS, Figma, Illustrator, Photoshop",
-		description: "Dit is de uitgebreide uitleg van het project",
+		description:
+			"Dit volledige project is gemaakt voor een cateringbedrijf genaamd Belcatering. Zij gebruiken lokale producten en mensen om eten te bereiden en hun bedrijf te runnen. Dit project is uitgevoerd door een team van 6 studenten.",
 		image: "../Images/BelCatering/Belcatering_home.png",
 		gallery: [
 			"../Images/BelCatering/3d_phone_belcatering.png",
@@ -73,6 +75,7 @@ const worksData = [
 			"../Images/Ecosysteem/Mormel.png",
 			"../Images/Ecosysteem/KioskResult_wf.png",
 			"../Images/Ecosysteem/KioskStart_wf.png",
+			"../Images/Ecosysteem/Stijlgids.png",
 		],
 	},
 	{
@@ -83,7 +86,7 @@ const worksData = [
 			"Unity 6, C#, Vue, Vite, Bootstrap 5, Node.js, Express, PostgreSQL, Docker",
 		githubUrl: "https://github.com/EHB-MCT/wdm-EphramJanssens.git",
 		description:
-			"Real-time analytics platform for Unity games with behavioral tracking and user profiling. This project offers a full-stack solution for collecting, storing, and visualizing gameplay data. The system connects a Unity game with a Node.js backend and a Vue 3 frontend dashboard to provide insight into player behavior through detailed logs and statistics.",
+			"Realtime analyseplatform voor Unity-games met gedragsregistratie en gebruikersprofilering. Dit project biedt een complete oplossing voor het verzamelen, opslaan en visualiseren van gameplaydata. Het systeem verbindt een Unity-game met een Node.js-backend en een Vue 3-frontenddashboard om inzicht te geven in spelersgedrag via gedetailleerde logboeken en statistieken.",
 		image: "../Images/Dark patterns/1.png",
 		videoUrl: "",
 		gallery: [
