@@ -1,0 +1,104 @@
+.AboutBanner {
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AboutBanner h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/* De hoofdcontainer om alles netjes in het midden te houden */
+.AboutContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 5%;
+}
+
+/* --- Deel 1: Introductie (Foto + Tekst) --- */
+.AboutIntro {
+    display: flex;
+    flex-wrap: wrap; /* Zorgt dat het op mobiel netjes onder elkaar valt */
+    gap: 50px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.AboutImage {
+    flex: 1; /* Neemt 1 deel van de ruimte in */
+    min-width: 300px;
+}
+
+.AboutImage img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Zorgt voor een perfect vierkante of ronde uitsnede */
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.AboutText {
+    flex: 2; /* Neemt 2 delen van de ruimte in, dus is breder dan de foto */
+    min-width: 300px;
+}
+
+.AboutText h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.AboutText p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* --- Deel 2: De kaarten (Grid) --- */
+.AboutGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+/* Hergebruik van de WorkContainer esthetiek */
+.AboutCard {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    height: 100%; /* Zorgt dat alle kaarten in de rij even hoog zijn */
+}
+
+.AboutCard h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.CardSection {
+    margin-bottom: 20px;
+}
+
+.CardSection:last-child {
+    margin-bottom: 0;
+}
+
+.CardSection h4 {
+    font-size: 1.1rem;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.CardSection p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+}
