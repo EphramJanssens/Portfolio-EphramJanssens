@@ -70,6 +70,7 @@
 	aspect-ratio: 16 / 9;
 	object-fit: contain;
 	display: block;
+	cursor: zoom-in;
 }
 
 .carousel-btn {
@@ -96,6 +97,43 @@
 }
 .next-btn {
 	right: 10px;
+}
+
+.lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 9999;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.lightbox img {
+	max-width: 90vw;
+	max-height: 90vh;
+	object-fit: contain;
+	border-radius: 4px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	font-size: 50px;
+	color: white;
+	cursor: pointer;
+	user-select: none;
+	transition: color 0.3s ease;
+}
+
+.lightbox-close:hover {
+	color: #cccccc;
 }
 
 .hidden {

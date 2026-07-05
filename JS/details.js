@@ -42,6 +42,10 @@ if (currentWork) {
 	const prevBtn = document.getElementById("carousel-prev");
 	const nextBtn = document.getElementById("carousel-next");
 
+	const lightbox = document.getElementById("lightbox");
+	const lightboxImg = document.getElementById("lightbox-img");
+	const lightboxClose = document.getElementById("lightbox-close");
+
 	if (currentWork.gallery && currentWork.gallery.length > 0) {
 		carouselContainer.classList.remove("hidden");
 
@@ -52,6 +56,11 @@ if (currentWork) {
 			const imgElement = document.createElement("img");
 			imgElement.src = imgUrl;
 			imgElement.alt = "Gallery image";
+
+			imgElement.addEventListener("click", () => {
+				lightboxImg.src = imgUrl;
+				lightbox.classList.remove("hidden");
+			});
 
 			slideDiv.appendChild(imgElement);
 			carouselTrack.appendChild(slideDiv);
@@ -72,6 +81,16 @@ if (currentWork) {
 		prevBtn.addEventListener("click", () => {
 			currentIndex = currentIndex === 0 ? totalSlides - 1 : currentIndex - 1;
 			updateCarousel();
+		});
+
+		lightboxClose.addEventListener("click", () => {
+			lightbox.classList.add("hidden");
+		});
+
+		lightbox.addEventListener("click", (event) => {
+			if (event.target === lightbox) {
+				lightbox.classList.add("hidden");
+			}
 		});
 	}
 } else {
