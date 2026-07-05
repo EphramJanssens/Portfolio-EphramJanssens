@@ -44,7 +44,8 @@ const worksData = [
 		title: "Statue pose",
 		role: "3D modeller",
 		tools: "Unity 6, Maya, Substance painter",
-		description: "Dit is de uitgebreide uitleg van het project.",
+		description:
+			"Een opdracht voor 3D. Het doel van deze oprdacht was om de 3D modelling pipeline van Maya naar Unity 6 te gebruiken. Hier leerde ik Substance Painter en animation in Maya.",
 		image: "#",
 		videoUrl: "https://www.youtube.com/embed/x4a-dP9pFh0?si=SvrMieyUx3fZcClw",
 		gallery: [
@@ -86,7 +87,7 @@ const worksData = [
 			"Unity 6, C#, Vue, Vite, Bootstrap 5, Node.js, Express, PostgreSQL, Docker",
 		githubUrl: "https://github.com/EHB-MCT/wdm-EphramJanssens.git",
 		description:
-			"Realtime analyseplatform voor Unity-games met gedragsregistratie en gebruikersprofilering. Dit project biedt een complete oplossing voor het verzamelen, opslaan en visualiseren van gameplaydata. Het systeem verbindt een Unity-game met een Node.js-backend en een Vue 3-frontenddashboard om inzicht te geven in spelersgedrag via gedetailleerde logboeken en statistieken.",
+			"Realtime analyseplatform voor Unity-games met gedragsregistratie en gebruikersprofiling. Dit project biedt een complete oplossing voor het verzamelen, opslaan en visualiseren van gameplaydata. Het systeem verbindt een Unity-game met een Node.js-backend en een Vue 3-frontenddashboard om inzicht te geven in spelersgedrag via gedetailleerde logboeken en statistieken.",
 		image: "../Images/Dark patterns/1.png",
 		videoUrl: "",
 		gallery: [
@@ -94,6 +95,69 @@ const worksData = [
 			"../Images/Dark patterns/2.png",
 			"../Images/Dark patterns/3.png",
 			"../Images/Dark patterns/4.png",
+		],
+	},
+	{
+		id: "werk6",
+		title: "Finaly festival time",
+		role: "UI/UX designer",
+		tools: "Figma, Illustrator, Photoshop",
+		githubUrl: "",
+		description:
+			"Finaly festival time was een opdracht voor het vak Design 2. We moesten zelf een fictieve festival creëren en UX/UI voor maken. Dit was mijn eerste poging UX/UI design.",
+		image: "../Images/FinalyFestivalTime/logo_MetalFest_Ephram_Janssens.png",
+		videoUrl: "",
+		gallery: [
+			"../Images/FinalyFestivalTime/logo_MetalFest_Ephram_Janssens.png",
+			"../Images/FinalyFestivalTime/Ephram_Janssens_festival_Page_1.png",
+			"../Images/FinalyFestivalTime/Ephram_Janssens_festival_Page_2.png",
+			"../Images/FinalyFestivalTime/Ephram_Janssens_festival_Page_3.png",
+			"../Images/FinalyFestivalTime/Ephram_Janssens_festival_Page_4.png",
+			"../Images/FinalyFestivalTime/Ephram_Janssens_festival_Page_5.png",
+			"../Images/FinalyFestivalTime/Ephram_Janssens_festival_Page_6.png",
+			"../Images/FinalyFestivalTime/Ephram_Janssens_festival_Page_7.png",
+			"../Images/FinalyFestivalTime/Ephram_Janssens_festival_Page_8.png",
+			"../Images/FinalyFestivalTime/Ephram_Janssens_festival_Page_9.png",
+			"../Images/FinalyFestivalTime/Concept_Ephram_Janssens.png",
+		],
+	},
+	{
+		id: "werk7",
+		title: "PowerBack",
+		role: "Designer",
+		tools: "Illustrator, Photoshop, Indesign",
+		githubUrl: "",
+		description:
+			"PowerBack was een opdracht voor Design 3. De opdracht was om rond een fictief product reclame te maken. Hieronder vind u de poster, teaser en instagram carrousel.",
+		image: "../Images/PowerBack/Poster_ephram_Janssens.png",
+		videoUrl: "",
+		gallery: [
+			"../Images/PowerBack/Poster_ephram_Janssens.png",
+			"../Images/PowerBack/Teaser_Ephram_Janssens.png",
+			"../Images/PowerBack/Insta_carrousel_Ephram_Janssens_carrousel 1.png",
+			"../Images/PowerBack/Insta_carrousel_Ephram_Janssens_carrousel 2.png",
+			"../Images/PowerBack/Insta_carrousel_Ephram_Janssens_carrousel 3.png",
+		],
+	},
+	{
+		id: "werk8",
+		title: "Opdracht 3D games",
+		role: "3D game developer",
+		tools: "Unity 6, C#",
+		githubUrl: "",
+		description:
+			"Deze opdracht was mijn eerste werkende game. Dit is een horror game waar de speler puzzels moet oplossen om op tijd naar de volgende kamer te ontsnappen. Deze opdracht was gemaakt met 1 medestudent.",
+		image: "../Images/3DGames/Screenshot 2025-11-03 140447.png",
+		videoUrl: "",
+		gallery: [
+			"../Images/3DGames/Screenshot 2025-11-03 140447.png",
+			"../Images/3DGames/Screenshot 2025-11-03 140527.png",
+			"../Images/3DGames/Screenshot 2025-11-03 140609.png",
+			"../Images/3DGames/Screenshot 2025-11-03 140719.png",
+			"../Images/3DGames/Screenshot 2025-11-03 140817.png",
+			"../Images/3DGames/Screenshot 2025-11-03 150316.png",
+			"../Images/3DGames/Screenshot 2025-11-03 150417.png",
+			"../Images/3DGames/Screenshot 2025-11-03 150442.png",
 		],
 	},
 ];

@@ -39,4 +39,6 @@
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 40px;
 	padding: 60px 5%;
+	max-width: 1500px;
+	margin: 0 auto;
 }
