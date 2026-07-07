@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Work 1 Detail - Ephram Janssens</title>
+
+		<link rel="stylesheet" href="./CSS/base.css" />
+		<link rel="stylesheet" href="./CSS/layout.css" />
+		<link rel="stylesheet" href="./CSS/components.css" />
+		<link rel="stylesheet" href="./CSS/work-detail.css" />
+	</head>
+	<body>
+		<header>
+			<nav class="main-nav">
+				<h2>Ephram Janssens</h2>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="WorkDetailBanner">
+				<img id="detail-image" src="#" alt="Banner image" />
+				<iframe
+					id="detail-video"
+					class="hidden"
+					src=""
+					title="Youtube video player"
+					frameborder="0"
+				></iframe>
+			</section>
+
+			<section class="WorkDetailContent">
+				<h1 id="detail-title">Loading...</h1>
+
+				<div class="WorkMeta">
+					<p><strong>Rol:</strong> <span id="detail-role"></span></p>
+					<p><strong>Tools:</strong> <span id="detail-tools"></span></p>
+					<p id="detail-github-container" class="hidden">
+						<strong>Repo:</strong>
+						<a id="detail-github-link" href="#" target="_blank"
+							>Bekijk broncode</a
+						>
+					</p>
+				</div>
+
+				<div class="WorkDescription">
+					<p id="detail-description"></p>
+				</div>
+
+				<div id="detail-carousel-container" class="carousel-container hidden">
+					<button id="carousel-prev" class="carousel-btn prev-btn">
+						&#10094;
+					</button>
+
+					<div class="carousel-track-wrapper">
+						<div id="carousel-track" class="carousel-track"></div>
+					</div>
+
+					<button id="carousel-next" class="carousel-btn next-btn">
+						&#10095;
+					</button>
+				</div>
+			</section>
+
+			<div id="lightbox" class="lightbox hidden">
+				<span id="lightbox-close" class="lightbox-close">&times;</span>
+				<img id="lightbox-img" src="" alt="Inspect" />
+			</div>
+		</main>
+		<script src="JS/data.js"></script>
+		<script src="JS/details.js"></script>
+	</body>
+</html>

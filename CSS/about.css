@@ -1,0 +1,105 @@
+.AboutBanner {
+	width: 100%;
+	height: 30vh;
+	background-color: black;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.AboutBanner h1 {
+	font-size: 3rem;
+	letter-spacing: 2px;
+}
+
+.AboutContent {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 60px 5%;
+}
+
+.AboutIntro {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin-bottom: 40px;
+	align-items: center;
+	background-color: #e8f2f5;
+	border-radius: 12px;
+	padding: 40px; 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.AboutImage {
+	flex: 1;
+	min-width: 300px;
+}
+
+.AboutImage img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-radius: 12px;
+}
+
+.AboutText {
+	flex: 2;
+	min-width: 300px;
+	color: #1d1d2c;
+}
+
+.AboutText h2 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.AboutText p {
+	font-size: 1.1rem;
+	line-height: 1.8;
+	margin-bottom: 15px;
+	color: #1d1d2c;
+}
+
+.AboutGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 40px;
+}
+
+.AboutCard {
+	background-color: #e8f2f5;
+	border-radius: 12px;
+	padding: 30px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+	height: 100%;
+	color: #1d1d2c;
+}
+
+.AboutCard h3 {
+	font-size: 1.5rem;
+	margin-bottom: 25px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #b2cac9;
+}
+
+.CardSection {
+	margin-bottom: 20px;
+}
+
+.CardSection:last-child {
+	margin-bottom: 0;
+}
+
+.CardSection h4 {
+	font-size: 1.1rem;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+.CardSection p {
+	font-size: 0.95rem;
+	line-height: 1.5;
+	color: #555;
+}

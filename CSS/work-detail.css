@@ -1,0 +1,141 @@
+.WorkDetailBanner {
+	width: 100%;
+	height: 50vh;
+	overflow: hidden;
+}
+
+.WorkDetailBanner img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.WorkDetailContent {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 60px 5%;
+}
+
+.WorkDetailContent h1 {
+	font-size: 2.5rem;
+	margin-bottom: 15px;
+}
+
+.WorkMeta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.WorkDescription p {
+	margin-bottom: 20px;
+	line-height: 1.6;
+	font-size: 1.1rem;
+}
+
+#detail-video {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.carousel-container {
+	position: relative;
+	width: 100%;
+	margin-top: 40px;
+}
+
+.carousel-track-wrapper {
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-track {
+	display: flex;
+	transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide {
+	min-width: 100%;
+}
+
+.carousel-slide img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+	object-fit: contain;
+	display: block;
+	cursor: zoom-in;
+}
+
+.carousel-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	font-size: 24px;
+	padding: 10px 15px;
+	cursor: pointer;
+	z-index: 10;
+	border-radius: 4px;
+	transition: background-color 0.3s;
+}
+
+.carousel-btn:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+	left: 10px;
+}
+.next-btn {
+	right: 10px;
+}
+
+.lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 9999;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.lightbox img {
+	max-width: 90vw;
+	max-height: 90vh;
+	object-fit: contain;
+	border-radius: 4px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	font-size: 50px;
+	color: white;
+	cursor: pointer;
+	user-select: none;
+	transition: color 0.3s ease;
+}
+
+.lightbox-close:hover {
+	color: #cccccc;
+}
+
+.hidden {
+	display: none !important;
+}
