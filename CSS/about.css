@@ -22,9 +22,13 @@
 .AboutIntro {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 50px;
-	margin-bottom: 80px;
+	gap: 40px;
+	margin-bottom: 40px;
 	align-items: center;
+	background-color: #e8f2f5;
+	border-radius: 12px;
+	padding: 40px; 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .AboutImage {
@@ -38,15 +42,11 @@
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
 	border-radius: 12px;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .AboutText {
 	flex: 2;
 	min-width: 300px;
-	background-color: #e8f2f5;
-	border-radius: 12px;
-	padding: 30px;
 	color: #1d1d2c;
 }
 
