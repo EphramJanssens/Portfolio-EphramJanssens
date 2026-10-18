@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	if (currentWork) {
 		const imageElement = document.getElementById("detail-image");
 		const videoElement = document.getElementById("detail-video");
+		const pdfLink = document.getElementById("detail-pdf-link");
 
 		if (currentWork.videoUrl) {
 			videoElement.src = currentWork.videoUrl;
@@ -16,6 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
 			imageElement.alt = currentWork.title;
 			imageElement.classList.remove("hidden");
 			videoElement.classList.add("hidden");
+		}
+
+		if (pdfLink) {
+			if (currentWork.pdfUrl) {
+				pdfLink.href = currentWork.pdfUrl;
+				pdfLink.classList.remove("hidden");
+			} else {
+				pdfLink.classList.add("hidden");
+			}
 		}
 
 		document.getElementById("detail-title").textContent = currentWork.title;
@@ -95,9 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			});
 		}
 	} else {
-		document.getElementById("detail-title").textContent =
-			"Project niet gevonden";
-		document.getElementById("detail-description").textContent =
-			"We konden dit werk niet vinden.";
+		document.getElementById("detail-title").textContent = currentWork.title;
+		document.getElementById("detail-role").textContent = currentWork.role;
 	}
 });

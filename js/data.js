@@ -18,6 +18,7 @@ const worksData = [
 			"images/LearninChem/Buret.png",
 			"images/LearninChem/Module3.png",
 		],
+		pdfUrl: "/documents/Magazine_FinalWork_EphramJanssens.pdf",
 	},
 	{
 		id: "werk2",
@@ -138,6 +139,7 @@ const worksData = [
 			"images/PowerBack/Insta_carrousel_Ephram_Janssens_carrousel 2.png",
 			"images/PowerBack/Insta_carrousel_Ephram_Janssens_carrousel 3.png",
 		],
+		pdfUrl: "/documents/Brandbook_Powerback_EphramJanssens.pdf",
 	},
 	{
 		id: "werk8",
